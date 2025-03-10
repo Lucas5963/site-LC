@@ -36,29 +36,29 @@ footer {
     background-color: #333;
     color: white;
 }
-/* Estilo para os Botıes */
+/* Estilo para os Bot√µes */
 button {
     background-color: #4CAF50; /* Cor de fundo */
     color: white;              /* Cor do texto */
     border: none;              /* Remover borda */
-    padding: 10px 20px;        /* EspaÁamento interno */
+    padding: 10px 20px;        /* Espa√ßamento interno */
     font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;          /* Cursor de m„o */
+    cursor: pointer;          /* Cursor de m√£o */
     border-radius: 5px;        /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Efeito de transiÁ„o */
+    transition: background-color 0.3s ease; /* Efeito de transi√ß√£o */
 }
 
 button:hover {
-    background-color: #45a049; /* Cor do bot„o ao passar o mouse */
+    background-color: #45a049; /* Cor do bot√£o ao passar o mouse */
 }
-/* Estilo para a Lista de TÛpicos */
+/* Estilo para a Lista de T√≥picos */
 ul {
     list-style-type: none;     /* Remove os marcadores da lista */
     padding: 0;
 }
 
 ul li {
-    margin: 10px 0;            /* EspaÁamento entre os itens */
+    margin: 10px 0;            /* Espa√ßamento entre os itens */
 }
 
 ul li a {
@@ -66,25 +66,65 @@ ul li a {
     color: #333;               /* Cor do texto do link */
     font-size: 18px;
     padding: 5px;
-    transition: color 0.3s ease; /* Efeito de transiÁ„o */
+    transition: color 0.3s ease; /* Efeito de transi√ß√£o */
 }
 
 ul li a:hover {
     color: #4CAF50;            /* Cor do link ao passar o mouse */
 }
-/* Estilo para os Botıes */
+/* Estilo para os Bot√µes */
 button {
     background-color: #4CAF50; /* Cor de fundo */
     color: white;              /* Cor do texto */
     border: none;              /* Remover borda */
-    padding: 10px 20px;        /* EspaÁamento interno */
+    padding: 10px 20px;        /* Espa√ßamento interno */
     font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;          /* Cursor de m„o */
+    cursor: pointer;          /* Cursor de m√£o */
     border-radius: 5px;        /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Efeito de transiÁ„o */
+    transition: background-color 0.3s ease; /* Efeito de transi√ß√£o */
 }
 
 button:hover {
-    background-color: #45a049; /* Cor do bot„o ao passar o mouse */
+    background-color: #45a049; /* Cor do bot√£o ao passar o mouse */
 }
 
+/* Estilo b√°sico da p√°gina (caso n√£o tenha) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header, section, .botoes, footer {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos bot√µes */
+.botao {
+    display: inline-block;
+    width: 100px; /* Tamanho do bot√£o */
+    height: 100px;
+    border-radius: 50%; /* Redondo */
+    text-align: center;
+    line-height: 100px; /* Centraliza o texto verticalmente */
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    font-size: 16px;
+    background-size: cover; /* Imagem cobre o bot√£o */
+    background-position: center; /* Centraliza a imagem */
+    transition: opacity 0.3s; /* Efeito ao passar o mouse */
+    margin: 10px; /* Espa√ßo entre bot√µes */
+}
+
+.botao:hover {
+    opacity: 0.8; /* Efeito de hover */
+}
+
+/* Imagens espec√≠ficas para cada bot√£o */
+.botao-1 {
+    background-image: url('fluminense.jpg'); /* Foto do Fluminense */
+}
+
+.botao-2 {
+    background-image: url('drogaria.jpg'); /* Foto da drogaria */
+}

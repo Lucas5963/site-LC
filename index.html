@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluminense 8x0 Maraba</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilização do formulário */
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        /* Estilização da exibição dos dados salvos */
+        .dados-salvos {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .dados-salvos p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .botoes {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .botao:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,12 +87,7 @@
         <p>Este é um site para falar sobre o jogo do Fluminense.</p>
     </header>
     
-    <section>
-        <h2>Fluminense</h2>
-        <p>Fluminense faz história com goleada impressionante sobre Maraab: 8 a 0! [...]</p>
-    </section>
-
-    <section>
+    <section class="container">
         <h2>Cadastro de Usuário</h2>
         <form id="cadastroForm">
             <label for="nome">Nome:</label>
@@ -37,13 +107,17 @@
 
             <button type="submit">Salvar</button>
         </form>
+    </section>
 
-        <h3>Dados Salvos:</h3>
-        <p><strong>Nome:</strong> <span id="nomeSalvo"></span></p>
-        <p><strong>CPF:</strong> <span id="cpfSalvo"></span></p>
-        <p><strong>Data de Nascimento:</strong> <span id="dataNascimentoSalvo"></span></p>
-        <p><strong>Email:</strong> <span id="emailSalvo"></span></p>
-        <p><strong>Chave Pix:</strong> <span id="pixSalvo"></span></p>
+    <section class="container">
+        <h2>Dados Salvos</h2>
+        <div class="dados-salvos">
+            <p><strong>Nome:</strong> <span id="nomeSalvo">---</span></p>
+            <p><strong>CPF:</strong> <span id="cpfSalvo">---</span></p>
+            <p><strong>Data de Nascimento:</strong> <span id="dataNascimentoSalvo">---</span></p>
+            <p><strong>Email:</strong> <span id="emailSalvo">---</span></p>
+            <p><strong>Chave Pix:</strong> <span id="pixSalvo">---</span></p>
+        </div>
     </section>
 
     <div class="botoes">
@@ -79,11 +153,11 @@
 
         // Função para carregar os dados ao abrir a página
         function carregarDados() {
-            document.getElementById("nomeSalvo").innerText = localStorage.getItem("nome") || "";
-            document.getElementById("cpfSalvo").innerText = localStorage.getItem("cpf") || "";
-            document.getElementById("dataNascimentoSalvo").innerText = localStorage.getItem("dataNascimento") || "";
-            document.getElementById("emailSalvo").innerText = localStorage.getItem("email") || "";
-            document.getElementById("pixSalvo").innerText = localStorage.getItem("pix") || "";
+            document.getElementById("nomeSalvo").innerText = localStorage.getItem("nome") || "---";
+            document.getElementById("cpfSalvo").innerText = localStorage.getItem("cpf") || "---";
+            document.getElementById("dataNascimentoSalvo").innerText = localStorage.getItem("dataNascimento") || "---";
+            document.getElementById("emailSalvo").innerText = localStorage.getItem("email") || "---";
+            document.getElementById("pixSalvo").innerText = localStorage.getItem("pix") || "---";
         }
 
         // Carregar os dados quando a página abrir

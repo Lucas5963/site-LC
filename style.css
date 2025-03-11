@@ -6,125 +6,82 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Cinza claro para fundo profissional */
     color: #333;
+    padding: 20px;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #00FA9A;
-    color: MediumSpringGreen;
+    background-color: #004080; /* Azul escuro profissional */
+    color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 h1 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
+/* Seções */
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
+    max-width: 800px; /* Mantém o site alinhado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Rodapé */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 15px;
+    background-color: #004080;
     color: white;
-}
-/* Estilo para os Botões */
-button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white;              /* Cor do texto */
-    border: none;              /* Remover borda */
-    padding: 10px 20px;        /* Espaçamento interno */
-    font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;          /* Cursor de mão */
-    border-radius: 5px;        /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Efeito de transição */
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
-}
-/* Estilo para a Lista de Tópicos */
-ul {
-    list-style-type: none;     /* Remove os marcadores da lista */
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;            /* Espaçamento entre os itens */
-}
-
-ul li a {
-    text-decoration: none;     /* Remove o sublinhado dos links */
-    color: #333;               /* Cor do texto do link */
-    font-size: 18px;
-    padding: 5px;
-    transition: color 0.3s ease; /* Efeito de transição */
-}
-
-ul li a:hover {
-    color: #4CAF50;            /* Cor do link ao passar o mouse */
-}
-/* Estilo para os Botões */
-button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white;              /* Cor do texto */
-    border: none;              /* Remover borda */
-    padding: 10px 20px;        /* Espaçamento interno */
-    font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;          /* Cursor de mão */
-    border-radius: 5px;        /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Efeito de transição */
-}
-
-button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
-}
-
-/* Estilo básico da página (caso não tenha) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-header, section, .botoes, footer {
-    margin-bottom: 20px;
-}
-
-/* Estilo dos botões */
-.botao {
+/* Botões */
+button, .botao {
     display: inline-block;
-    width: 100px; /* Tamanho do botão */
-    height: 100px;
-    border-radius: 50%; /* Redondo */
-    text-align: center;
-    line-height: 100px; /* Centraliza o texto verticalmente */
-    text-decoration: none; /* Remove sublinhado */
-    color: white; /* Cor do texto */
+    background-color: #007bff; /* Azul moderno */
+    color: white;
+    border: none;
+    padding: 12px 25px;
     font-size: 16px;
-    background-size: cover; /* Imagem cobre o botão */
-    background-position: center; /* Centraliza a imagem */
-    transition: opacity 0.3s; /* Efeito ao passar o mouse */
-    margin: 10px; /* Espaço entre botões */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 10px;
 }
 
-.botao:hover {
-    opacity: 0.8; /* Efeito de hover */
+button:hover, .botao:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
 }
 
-/* Imagens específicas para cada botão */
+/* Botões redondos com imagem */
+.botao {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
 .botao-1 {
-    background-image: url('fluminense.jpg'); /* Foto do Fluminense */
+    background-image: url('fluminense.jpg'); /* Ajuste o caminho da imagem */
 }
 
 .botao-2 {
-    background-image: url('drogaria.jpg'); /* Foto da drogaria */
+    background-image: url('drogaria.jpg');
 }

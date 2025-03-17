@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Cinzel', serif; /* Nova fonte substituindo Roboto */
+    font-family: 'Cinzel', serif; /* Mantendo a fonte */
     line-height: 1.6;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvPvTPBUuLriKVoDVfK349d92OLvEWAup9UOUbMhNtv5AIene4SjIjgq1&s=10'); /* Imagem de fundo */
     background-size: cover;
@@ -40,6 +40,31 @@ section {
     border-radius: 10px;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do formulário */
+.container {
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Cada label em uma linha */
+    margin-top: 10px;
+    color: #333; /* Cor escura para contraste no fundo claro da seção */
+}
+
+input {
+    width: 100%; /* Garante que os inputs ocupem a largura total */
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #000000; /* Fundo preto nos campos de input */
+    color: #FFFFFF; /* Texto branco nos inputs para contraste */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block; /* Garante que cada input fique em uma linha */
 }
 
 /* Rodapé */

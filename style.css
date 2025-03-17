@@ -80,7 +80,7 @@ footer {
 /* Botões */
 button, .botao {
     display: inline-block;
-    background-color: #007bff; /* Azul moderno */
+    background-color: #004080; /* Azul moderno */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -101,7 +101,6 @@ button:hover, .botao:hover {
 .botao {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     line-height: 120px;
     text-align: center;
     background-size: cover;

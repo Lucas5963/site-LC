@@ -99,9 +99,8 @@ button:hover, .botao:hover {
 
 /* Botões redondos com imagem */
 .botao {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     line-height: 120px;
     text-align: center;
     background-size: cover;
@@ -109,7 +108,7 @@ button:hover, .botao:hover {
 }
 
 .botao-1 {
-    background-image: url('fluminense.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlmsMZk1rvOKn8ekYs8_1fpp5iD92R14IQrSiKDk26Lh3RcCc2QxIuFw&s=10');
 }
 
 /* Efeito glow-on-hover */

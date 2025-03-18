@@ -113,15 +113,12 @@ button:hover, .botao:hover {
     background-image: url('fluminense.jpg');
 }
 
-.botao-2 {
-    background-image: url('drogaria.jpg');
-}
-
 /* Efeito glow-on-hover */
 .glow-on-hover {
     background: transparent;
     position: relative;
     overflow: hidden;
+    z-index: 1; /* Garante que o botão fique acima do fundo */
 }
 
 .glow-on-hover:before {
@@ -137,6 +134,7 @@ button:hover, .botao:hover {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     animation: glowing 20s linear infinite;
+    border-radius: 50%; /* Mantém o formato redondo */
 }
 
 .glow-on-hover:hover:before {
@@ -152,7 +150,13 @@ button:hover, .botao:hover {
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 50%; /* Mantém o formato redondo */
+}
+
+/* Priorizando o glow no hover para o botao-1 */
+.glow-on-hover.botao-1:hover {
+    background-image: none; /* Remove a imagem ao ativar o glow */
+    background-color: transparent; /* Garante que o gradiente apareça */
 }
 
 @keyframes glowing {

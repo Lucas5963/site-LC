@@ -159,6 +159,12 @@ button:hover, .botao:not(.glow-on-hover):hover {
     background-color: transparent;
 }
 
+/* Ajuste no container de botões dentro do formulário */
+.botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }

@@ -33,9 +33,8 @@
             <input type="text" id="nomeUsuario" required>
 
             <div class="botoes">
-        <a href="https://www.xnxx.com.br" class="botao botao-1 glow-on-hover">Salvar</a>
+                <button type="submit" class="botao botao-1 glow-on-hover">Salvar</button>
             </div>
-            
         </form>
     </section>
 
@@ -52,14 +51,14 @@
             let cpf = document.getElementById("cpf").value;
             let dataNascimento = document.getElementById("dataNascimento").value;
             let email = document.getElementById("email").value;
-            let pix = document.getElementById("pix").value;
+            let nomeUsuario = document.getElementById("nomeUsuario").value; // Corrigido de "pix" para "nomeUsuario"
 
             // Salvar no Local Storage
             localStorage.setItem("nome", nome);
             localStorage.setItem("cpf", cpf);
             localStorage.setItem("dataNascimento", dataNascimento);
             localStorage.setItem("email", email);
-            localStorage.setItem("pix", pix);
+            localStorage.setItem("nomeUsuario", nomeUsuario); // Corrigido de "pix" para "nomeUsuario"
 
             // Atualizar a exibição dos dados salvos
             carregarDados();
@@ -71,7 +70,7 @@
             document.getElementById("cpfSalvo").innerText = localStorage.getItem("cpf") || "---";
             document.getElementById("dataNascimentoSalvo").innerText = localStorage.getItem("dataNascimento") || "---";
             document.getElementById("emailSalvo").innerText = localStorage.getItem("email") || "---";
-            document.getElementById("pixSalvo").innerText = localStorage.getItem("pix") || "---";
+            document.getElementById("nomeUsuarioSalvo").innerText = localStorage.getItem("nomeUsuario") || "---"; // Corrigido
         }
 
         // Carregar os dados quando a página abrir

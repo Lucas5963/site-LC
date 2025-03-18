@@ -78,39 +78,26 @@ footer {
 }
 
 /* Botões */
-button, .botao {
+.botao {
     display: inline-block;
-    background-color: #007bff;
     color: white;
-    border: none;
-    padding: 12px 25px;
+    padding: 12px 25px; /* Tamanho retangular */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 8px; /* Bordas levemente arredondadas para retângulo */
     text-decoration: none;
     transition: 0.3s;
     margin: 10px;
     position: relative;
-}
-
-button:hover, .botao:not(.glow-on-hover):hover {
-    background-color: #0056b3;
-}
-
-/* Botões redondos com imagem */
-.botao {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    line-height: 120px;
     text-align: center;
-    background-size: cover;
-    background-position: center;
 }
 
+/* Estilo específico para botao-1 */
 .botao-1 {
     background-image: url('fluminense.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Efeito glow-on-hover */
@@ -134,7 +121,7 @@ button:hover, .botao:not(.glow-on-hover):hover {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     animation: glowing 20s linear infinite;
-    border-radius: 50%;
+    border-radius: 8px; /* Ajustado para retângulo */
 }
 
 .glow-on-hover:hover:before {
@@ -150,7 +137,7 @@ button:hover, .botao:not(.glow-on-hover):hover {
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 50%;
+    border-radius: 8px; /* Ajustado para retângulo */
 }
 
 /* Garantindo o glow no botao-1 */
